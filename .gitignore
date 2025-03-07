@@ -1,0 +1,12 @@
+# Dependencias instaladas con npm
+node_modules
+
+# Archivos de log
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+yarn.error.log
+
+# Archivos del editor
+.vscode
+.idea
