@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body class="bg-stone-100 ">
-    <header class="">
-        <nav class="">
-            <img class="" src="image/amazon..svg" alt="logo tienda">
-            <section class="">
-                <input class=" bg-amber-50 rounded-2xl" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-                <button class="" onclick=""><img src="image/busqueda.svg" alt="Logo de busqueda"></button>
+<body class="bg-stone-100 text-xs font-mono text-center ">
+    <header class="md:flex mb-5">
+        <img class="md:w-1/3 md:mx-0 h-auto w-full max-w-1/3 mx-auto" src="../image/amazon.svg" alt="logo tienda">
+        <nav class="md:max-w-2/3 md:w-full grid grid-cols-12 place-items-center">
+            <section class="grid grid-cols-7 col-span-7 col-start-2">
+                <input class=" col-span-6 bg-amber-50 rounded" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+                <button class="" onclick=""><img src="../image/busqueda.svg" alt="Logo de busqueda"></button>
             </section>
-            <a class="" href=""><img src="image/carrito.svg" alt="Logo carrito">Carrito</a>
-            <a class="" href=""><img src="image/user.svg" alt="Logo usuario">Cuenta</a>
+            <a class="col-start-10 md:w-full" href=""><img src="../image/carrito.svg" alt="Logo carrito" class="md:w-full"></a>
+            <a class="col-start-11" href=""><img src="../image/user.svg" alt="Logo usuario"></a>
         </nav>
     </header>
-    <main class="">
-        <article>
+    <main class="min-h-screen">
+        <article class=" grid grid-cols-5 justify-self-center ">
 
-            <header>
-                <nav class="">
+            <header class="col-span-5">
+                <nav class="flex justify-around max-w-2xl ">
                     <a class="" href="">Accesorios</a>
                     <a href="">Pc</a>
                     <a href="">Impresoras</a>
@@ -32,63 +32,65 @@
                 </nav>
             </header>
 
-            <figure class="">
-                <h2 class=" bg-gray-300">Accesorios</h2>
+            <figure class="max-w-2/3 mx-auto h-30  w-full pb-4 my-6 bg-gray-300 col-span-5  content-end">
+                <h2 class="pb-4">Accesorios</h2>
                 <p class=" ">INICIO > <span id="Ruta">ACCESORIOS</span></p>
             </figure>
 
-            <main>
-                <section class="" id="Productos">
-                    <img src="" alt="foto de producto">
-                    <h3>Nombre del producto</h3>
-                    <button onclick="">Comprar</button>
+            <aside class="col-span-1 mx-4">
+                <section class="items-center">
+                    <h2>Categorias</h2>
+                <section>
+                    <h4>lg</h4>
+                    <h4>lg</h4>
+                    <h4>lg</h4>
+                    <h4>lg</h4>
+                    <h4>lg</h4>
+                </section>
+                </section>
+            </aside>
+
+            <main class=" col-span-4 justify-self-center ">
+                <section class="grid md:grid-cols-4 gap-4 grid-cols-2 mb-2">
+                    <div class="col-span-1 bg-emerald-600 rounded max-w-25" id="Productos">
+                        <img class=" overflow-hidden rounded-sm" src="../image/mon.png" alt="foto de producto">
+                        <p class="my-2">Nombre del producto</p>
+                        <button class="bg-amber-300 hover:bg-amber-400 rounded mb-2" onclick="">Comprar</button>
+                    </div>
+                    <div class="col-span-1 bg-emerald-600 rounded max-w-25" id="Productos">
+                        <img class=" overflow-hidden rounded-sm" src="../image/mon.png" alt="foto de producto">
+                        <p class="my-2">Nombre del producto</p>
+                        <button class="bg-amber-300 hover:bg-amber-400 rounded mb-2" onclick="">Comprar</button>
+                    </div>
+                   
                 </section>
             </main>
 
         </article>
     </main>
 
-    <aside>
-        <section class="items-center">
-            <h2>Categorias</h2>
-            <select id="opciones" name="opciones">
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
-                <option value="opcion3">Opción 3</option>
-            </select>
-            <br>
-            <select id="opciones" name="opciones">
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
-                <option value="opcion3">Opción 3</option>
-            </select>
-            <br>
-            <select id="opciones" name="opciones">
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
-                <option value="opcion3">Opción 3</option>
-            </select>
-        </section>
-    </aside>
-
-    <footer class="">
-        <section class="">
+    <footer class="grid grid-cols-2 justify-self-center w-full bg-gray-300 pt-4">
+        <section class="text-center col-span-1">
             <h3 class="">Contactanos</h3>
             <div class="grid grid-cols-4 place-items-center">
-                <img class="justify-self-auto" src="image/facebook.svg" alt="facebook">
-                <img class="justify-self-auto" src="image/instagram.svg" alt="instagram">
-                <img class="justify-self-auto" src="image/twitter.svg" alt="twitter">
-                <img class="justify-self-auto" src="image/youtube.svg" alt="Youtube">
+                <img class="" src="../image/facebook.svg" alt="facebook">
+                <img class="" src="../image/instagram.svg" alt="instagram">
+                <img class="" src="../image/twitter.svg" alt="twitter">
+                <img class="" src="../image/youtube.svg" alt="Youtube">
             </div>
         </section>
-        <section class="">
+        <section class="text-center col-span-1">
             <h3 class="">Metodos de pago</h3>
-            <div class="grid grid-cols-4 place-items-center">
-            <img class="justify-self-auto" src="image/visa.svg" alt="Visa">
-            <img class="justify-self-auto" src="image/paypal.svg" alt="Paypal">
-            <img class="justify-self-auto" src="image/Yape.svg" alt="Yape">
-            <img class="justify-self-auto" src="image/plin.svg" alt="Plin">
+            <div class="grid grid-cols-4 place-items-center ">
+            <img class="" src="../image/visa.svg" alt="Visa">
+            <img class="" src="../image/paypal.svg" alt="Paypal">
+            <img class="" src="../image/Yape.svg" alt="Yape">
+            <img class="" src="../image/plin.svg" alt="Plin">
             </div>
+        </section>
+        <section class="col-span-2 mt-2 flex justify-center gap-4 mb-2">
+            <a class="flex bg-gray-200 items-center max-h-8 max-w-36  rounded" href=""><img src="../image/libroReclamaciones.svg" alt="Libro de reclamaciones">Libro de reclamaciones</a>
+            <a class="flex bg-gray-200 items-center max-h-8 max-w-36 rounded" href=""><img src="../image/candado.svg" alt="Terminos y condiciones">Terminos y condiciones</a>
         </section>
     </footer>
 
