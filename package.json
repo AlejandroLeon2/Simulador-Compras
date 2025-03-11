@@ -1,38 +1,11 @@
 {
   "name": "simulador-compras",
   "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.12",
-    "bootstrap": "^5.3.3",
-    "braces": "^3.0.3",
-    "detect-libc": "^2.0.3",
-    "enhanced-resolve": "^5.18.1",
-    "esbuild": "^0.25.0",
-    "fill-range": "^7.1.1",
-    "graceful-fs": "^4.2.11",
-    "is-extglob": "^2.1.1",
-    "is-glob": "^4.0.3",
-    "is-number": "^7.0.0",
-    "jiti": "^2.4.2",
-    "lightningcss": "^1.29.2",
-    "lightningcss-win32-x64-msvc": "^1.29.2",
-    "micromatch": "^4.0.8",
-    "mri": "^1.2.0",
-    "nanoid": "^3.3.8",
-    "node-addon-api": "^7.1.1",
-    "picocolors": "^1.1.1",
-    "picomatch": "^2.3.1",
-    "postcss": "^8.5.3",
-    "rollup": "^4.34.9",
-    "source-map-js": "^1.2.1",
-    "tailwindcss": "^4.0.12",
-    "tapable": "^2.2.1",
-    "to-regex-range": "^5.0.1",
-    "vite": "^6.2.0"
-  },
+  "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx @tailwindcss/cli -i ./dist/input.css -o ./dist/output.css --watch"
+
   },
   "repository": {
     "type": "git",
@@ -45,5 +18,9 @@
     "url": "https://github.com/AlejandroLeon2/Simulador-Compras/issues"
   },
   "homepage": "https://github.com/AlejandroLeon2/Simulador-Compras#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.12",
+    "tailwindcss": "^4.0.12"
+  }
 }
